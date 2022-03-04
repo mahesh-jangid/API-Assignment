@@ -2,11 +2,11 @@ const express = require("express");
 
 const app = express();
 
-app.get("", (req, res) => {
-  res.send("Hello");
+app.get("/", (req, res) => {
+  return res.send("Hello");
 });
 app.get("/books", (req, res) => {
-  res.send({
+  return res.send({
     "These Violent Delights":
       " blood feud between two gangs runs the streets red, leaving the city helpless in the grip of chaos. At the heart of it all is eighteen-year-old Juliette Cai, a former flapper who has returned to assume her role as the proud heir of the Scarlet Gang—a network of criminals far above the law.",
 
